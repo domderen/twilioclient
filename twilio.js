@@ -58,6 +58,11 @@ var Twilio = (function(){
                 };
             }
         }
+        
+        return {
+                host: '//static.twilio.com/',
+                minified: true
+            };
     })();
     var basename = url.minified ? "/twilio.min.js" : "/twilio.js";
     var ref = document.getElementsByTagName("script")[0];
